@@ -1,0 +1,115 @@
+.heros {
+  display: flex;
+  gap: 21px;
+  margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  color: #f0e6d2;
+}
+
+.section {
+  width: 248px;
+  height: 448px;
+  background: url("../../../public/3d-connections-polygonal-background-with-connecting-lines-and-dots\ 1.png");
+  border-radius: 5px;
+  background-color: #3c3c41;
+  border: 0.75px solid #3c3c41;
+  position: relative;
+}
+
+.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 50px;
+}
+
+.title::before {
+  content: url("../../../public/leftDec.png");
+  left: 18px;
+}
+
+.title::after {
+  content: url("../../../public/rightDec.png");
+  right: 18px;
+}
+
+.section::before,
+.section::after {
+  content: url("../../../public/diamante.png");
+  position: absolute;
+}
+
+.section::before {
+  top: 17%;
+  left: 47%;
+}
+.section::after {
+  bottom: 42%;
+  left: 47%;
+}
+
+.outerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerStyle::before {
+  content: url("../../../public/Group\ 1171275113.png");
+  filter: invert(14%) sepia(67%) saturate(486%) hue-rotate(359deg)
+    brightness(95%) contrast(85%);
+}
+
+.thumbnail {
+  position: absolute;
+}
+
+.image {
+  border-radius: 50%;
+  height: 124px;
+  width: 124px;
+}
+
+.infoContainer {
+  border-radius: 5px;
+  margin: 31px;
+  background-color: #1e2328;
+  border: 1px solid #5b5a56;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c89b3c;
+  font-weight: 550;
+  font-size: 20px;
+  margin-top: 27px;
+}
+
+.btn {
+  background: #c89b3c;
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0 34px;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .section {
+    margin: 0 auto;
+  }
+}

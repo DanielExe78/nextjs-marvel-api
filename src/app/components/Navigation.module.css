@@ -1,0 +1,69 @@
+.header {
+  border: 0.5px solid #3c3c41;
+  height: 115px;
+  display: flex;
+  padding-left: 62px;
+  padding-right: 37px;
+  background-color: #0e0f0f;
+}
+
+.btnContainer {
+  display: flex;
+  margin-left: auto;
+  gap: 1.4rem;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.singleNav {
+  display: inline-block;
+  padding: 45px;
+  position: relative;
+  cursor: pointer;
+  color: #f0e6d2;
+}
+
+.singleNav:hover::before {
+  content: url("../../../public/VectorarrowDown.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.singleNav:hover {
+  background: linear-gradient(#222222, #231f20);
+  color: #c89b3c;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: saturate(1000%);
+}
+
+.active {
+  display: inline-block;
+  padding: 45px;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(#222222, #231f20);
+  color: #c89b3c;
+}
+
+.active::before {
+  content: url("../../../public/VectorarrowDown.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
